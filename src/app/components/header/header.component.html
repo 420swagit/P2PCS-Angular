@@ -1,8 +1,12 @@
 <div class="header-container" [ngClass]="rootClassName">
-  <div class="header-container1"><h1>{{ heading }}</h1></div>
+  <div class="header-container1">
+    <a routerLink="/" class="header-navlink">
+      <h1 class="header-text">{{ heading }}</h1>
+    </a>
+  </div>
   <div class="header-container2">
-    <a routerLink="/about" class="header-navlink">{{ text4 }}</a>
-    <a routerLink="/who-we-are" class="header-navlink1">{{ text5 }}</a>
-    <a routerLink="/contact-us" class="header-navlink2">{{ text6 }}</a>
+    <a routerLink="/about" class="header-navlink1">{{ text4 }}</a>
+    <a routerLink="/who-we-are" class="header-navlink2">{{ text5 }}</a>
+    <a routerLink="/contact-us" class="header-navlink3">{{ text6 }}</a>
   </div>
 </div>
